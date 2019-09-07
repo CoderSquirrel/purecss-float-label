@@ -3,10 +3,10 @@
 class InputFloatLabel extends HTMLElement {  
   constructor() {
 	  super();
+	  console.log(this.attributes['label']);
     let label = this.attributes['label'].value;
     let id = this.attributes['id'].value;
     let type = this.attributes['type'].value || 'text';
-    let icon = this.attributes['card-icon'] && this.attributes['card-icon'].value;
      const template = document.createElement('template');
     const sheet = new CSSStyleSheet();
     sheet.insertRule(`
